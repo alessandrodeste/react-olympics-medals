@@ -1,0 +1,51 @@
+
+body {
+  background-color: #666;
+}
+.container {
+  max-width: 800px;  
+  border: 1px solid #666;
+  margin: 25px auto;
+  padding: 25px;
+  background-color: #FEFEFE;
+}
+
+#medals-table .gold,
+#medals-table .silver,
+#medals-table .bronze,
+#medals-table .total {
+  text-align: center;
+  width: 90px;
+}
+
+#medals-table .flag,
+#medals-table .rank {
+  text-align: center;
+  width: 50px;
+}
+
+#medals-table .total {
+  font-weight: bold;
+}
+
+#medals-table .country {
+ position: relative;
+}
+#medals-table .country span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+#medals-table th a {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/* only on small screen, hide the country and keep the flag */
+@media only screen and (max-width: 600px) {
+    .country { display:none;}
+}
