@@ -32,7 +32,7 @@ Compile for production
 npm run prod
 ```
 
-## Not accomplish
+## Not accomplished
 
 - use production url cdn
 - css bundle
